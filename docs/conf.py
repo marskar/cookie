@@ -83,7 +83,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'cookie'
-copyright = 2019, Martin Skarzynski
+copyright = u'2019, Martin Skarzynski'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
