@@ -54,10 +54,10 @@ help:
 clean:
 	rm -rf $(BUILDDIR)/* $(AUTODOCDIR)
 
-$(AUTODOCDIR): $(MODULEDIR)
+$(AUTODOCDIR): $(MODULEDIR) $(TESTDIR)
 	mkdir -p $@
 	$(AUTODOCBUILD) -f -o $@ $^
-	$(AUTODOCBUILD) -f -o $@ --tocfile tests $(TESTDIR)
+	$(AUTODOCBUILD) -fo . --tocfile tests $(TESTDIR)
 
 doc-requirements: $(AUTODOCDIR)
 
